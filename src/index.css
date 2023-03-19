@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,94 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.heading
+{
+  text-align: center;
+  font-size: 3rem;
+}
+.wrapper{
+  margin: 0 auto;
+  padding-bottom:100px;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:20px;
+}
+.container{
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(167, 167, 167);
+}
+.price::before{
+  content: "Rs ";
+}
+.price
+{ font-weight: bold;
+  font-size: large;
+  color:rgb(17, 219, 108)
+}
+.price:hover{
+  text-decoration: underline 2px;
+  cursor:pointer;
+}
+.spantag
+{ 
+  cursor: pointer;
+  color:blue;
+}
+.name
+{ text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.imgContainer{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.btn-red{
+   font-size: 1.3rem;
+   width:100%;
+   padding: .6rem ;
+   border-radius: 10px;
+   border:none;
+   font-weight: bold;
+}
+.btn-red:hover{
+  background-color: red;
+  color:white;
+  cursor:pointer;
+}
+.refresh
+{ height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-re{
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px  rgb(194, 183, 183);
+    font-size: 1.5rem;
+    padding: 5px 20px;
+}
+.lastHeading
+{
+   font-size: 3rem;
+   font-weight:bold;
+   color:coral;
+}
+
+@media screen and (max-width:450px) { 
+   .heading{
+    font-size:1.5rem;
+   }
 }
